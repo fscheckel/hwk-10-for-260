@@ -90,7 +90,7 @@ if __name__ == "__main__":
     vx0, vy0 = 0, 500 #starting velocity, m/s
     r0 = np.array([x0, y0, vx0, vy0])
 
-    xpos, ypos = run_adaptive(None)
+    xpos, ypos = run_rk4_fixed(None)
     #Make the plot
     plt.plot(xpos/AU, ypos/AU, alpha = 0.5)
     plt.plot(xpos/AU, ypos/AU, 'k.')
